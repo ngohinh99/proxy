@@ -41,6 +41,7 @@ setgid 65535
 setuid 65535
 stacksize 6291456 
 flush
+
 $(awk -F "/" '{print "\n" \
 "" $1 "\n" \
 "proxy -6 -n -a -p" $4 " -i" $3 " -e"$5"\n" \
@@ -110,3 +111,4 @@ gen_proxy_file_for_user
 rm -rf /root/3proxy-3proxy-0.8.6
 
 echo "Starting Proxy"
+
